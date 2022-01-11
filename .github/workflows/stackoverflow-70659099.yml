@@ -3,7 +3,10 @@
 name: 👷 Build
 
 # Triggers the workflow on push or pull request events
-on: [push, pull_request]
+on:
+  pull_request:
+    paths: 
+     - 'temp.js'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,6 +27,6 @@ jobs:
         run: yarn build
       # Get test coverage
       - uses: ziishaned/jest-reporter-action@v0.0.1
-          with:
+        with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           test-command: 'yarn test:unit:coverage'
