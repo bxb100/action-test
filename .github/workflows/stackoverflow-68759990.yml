@@ -1,4 +1,4 @@
-name: Using resuing workflow way
+name: PR check example
 
 on:
   pull_request:
