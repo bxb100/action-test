@@ -1,1 +1,12 @@
+name: integration
 
+on:
+  workflow_dispatch:
+  push:
+    branches: ["develop"]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'A'
