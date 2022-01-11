@@ -11,6 +11,10 @@ jobs:
     needs: call-workflow-job1
     steps:
       - run: echo ${{ needs.call-workflow-job1.outputs.firstword }} ${{ needs.call-workflow-job1.outputs.secondword }}
+      
+  call-workflow-job3:
+    uses: bxb100/action-test/.github/workflows/reusable-workflow-C.yml@main
+    needs: call-workflow-job2
 
   call-workflow-passing-data:
     uses: bxb100/action-test/.github/workflows/reusable-workflow-B.yml@main
