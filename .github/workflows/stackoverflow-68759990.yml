@@ -7,9 +7,9 @@ on:
 jobs:
   first:
     name: pretend the First workflow
-    uses: bxb100/action-test/.github/workflows/reusable-workflow-A.yml@main
+    uses: bxb100/action-test/.github/workflows/reusable-workflow-B.yml@main
    
   second:
     name: pretend the Second workflow
     needs: first
-    uses: bxb100/action-test/.github/workflows/reusable-workflow-B.yml@main
+    uses: bxb100/action-test/.github/workflows/reusable-workflow-C.yml@main
