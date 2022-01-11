@@ -1,0 +1,14 @@
+name: second
+
+on:
+  workflow_run:
+    workflows: ["first"]
+    types:
+      - completed
+
+jobs:
+    actions-tagger:
+      if: ${{ github.event.workflow_run.conclusion == 'success' }}
+      runs-on: ubuntu-latest
+      steps: 
+        - run: echo 'second'
