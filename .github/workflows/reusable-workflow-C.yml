@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: deploy1
         # ...deployment-specific steps
-        run: echo OK1
+        run: |
+          sleep 1m;
+          echo OK1
       - name: deploy2
         run: echo OK2
