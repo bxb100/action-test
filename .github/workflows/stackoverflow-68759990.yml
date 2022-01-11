@@ -2,7 +2,7 @@ name: Using resuing workflow way
 
 on:
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   first:
