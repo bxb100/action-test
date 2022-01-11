@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
-      - name: deploy
+      - name: deploy1
         # ...deployment-specific steps
-        run: echo OK
+        run: echo OK1
+      - name: deploy2
+        run: echo OK2
