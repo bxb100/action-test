@@ -1,0 +1,15 @@
+name: Using resuing workflow way
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  first:
+    name: pretend the First workflow
+    uses: bxb100/action-test/.github/workflows/reusable-workflow-A.yml@main
+   
+  second:
+    name: pretend the Second workflow
+    needs: first
+    uses: bxb100/action-test/.github/workflows/reusable-workflow-B.yml@main
