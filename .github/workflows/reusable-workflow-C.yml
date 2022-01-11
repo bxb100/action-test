@@ -1,1 +1,17 @@
+name: Reusable workflow for deployment
 
+concurrency: 
+  group: production
+  cancel-in-progress: true
+
+on:
+  workflow_call:
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: deploy
+        # ...deployment-specific steps
+        run: echo OK
