@@ -11,7 +11,7 @@ This repo build for testing github action config
 |[reusable-workflow-A.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/reusable-workflow-A.yml)| ~ | output |
 |[reusable-workflow-B.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/reusable-workflow-B.yml)| ~ | input |
 |[reusable-workflow-C.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/reusable-workflow-C.yml)| ~ | deploy[^4] |
-
+|[stackoverflow-68759990.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990.yml)| https://stackoverflow.com/questions/68759990/pull-request-is-not-detecting-action-when-run-via-workflow-run/70670877 | PR check using resuing way[^5]|
 
 
 
@@ -23,3 +23,4 @@ This repo build for testing github action config
 [^2]: https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#on
 [^3]: https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#jobsjob_iduses
 [^4]: https://github.com/bxb100/action-test/blob/main/workflow-panel-show.md that's same with doc show
+[^5]: https://github.com/bxb100/action-test/pull/4
