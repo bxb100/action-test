@@ -1,0 +1,15 @@
+name: develop-deployment
+
+    on:
+      workflow_dispatch:
+      workflow_run:
+        workflows: ["develop-tagging"]
+        branches: ["develop"]
+        types:
+          - completed
+    
+    jobs:
+      actions-deployment:
+      runs-on: ubuntu-latest
+      steps: 
+        - run: echo 'C'
