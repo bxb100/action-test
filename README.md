@@ -12,7 +12,7 @@ This repo build for testing github action config
 |[reusable-workflow-B.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/reusable-workflow-B.yml)| ~ | input |
 |[reusable-workflow-C.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/reusable-workflow-C.yml)| ~ | deploy[^4] |
 |[stackoverflow-68759990.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990.yml)| https://stackoverflow.com/questions/68759990/pull-request-is-not-detecting-action-when-run-via-workflow-run | PR check using reusing way[^5]|
-|[stackoverflow-68759990-1.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-1.yml)| ~ | workflow_run test |
+|[stackoverflow-68759990-1.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-1.yml)| ~ | ~ |
 |[stackoverflow-68759990-2.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-2.yml)| ~ | workflow_run test |
 
 
