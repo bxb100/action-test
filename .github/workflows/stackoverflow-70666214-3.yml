@@ -1,6 +1,5 @@
 name: develop-deployment
-
-    on:
+on:
       workflow_dispatch:
       workflow_run:
         workflows: ["develop-tagging"]
@@ -8,8 +7,8 @@ name: develop-deployment
         types:
           - completed
     
-    jobs:
-      actions-deployment:
+jobs:
+  actions-deployment:
       runs-on: ubuntu-latest
       steps: 
         - run: echo 'C'
