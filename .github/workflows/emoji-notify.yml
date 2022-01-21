@@ -1,0 +1,8 @@
+name: emoji notify show test
+on: workflow_dispatch
+jobs:
+  notify:
+    name: hello
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "::notice title=cs:: :warning: this warning emoji"
