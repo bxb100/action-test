@@ -5,4 +5,4 @@ jobs:
     name: hello
     runs-on: ubuntu-latest
     steps:
-      - run: echo "::notice title=cs:: :warning: this warning emoji"
+      - run: echo "::notice title=cs::\:warning\:this warning emoji"
