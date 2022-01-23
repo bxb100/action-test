@@ -14,6 +14,7 @@ This repo build for testing github action config
 |[stackoverflow-68759990.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990.yml)| https://stackoverflow.com/questions/68759990/pull-request-is-not-detecting-action-when-run-via-workflow-run | PR check using reusing way[^5]|
 |[stackoverflow-68759990-1.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-1.yml)| ~ | ~ |
 |[stackoverflow-68759990-2.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-2.yml)| ~ | workflow_run test |
+|[emoji-notify.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/emoji-notify.yml)| ~ | test notify emoji style|
 
 
 
