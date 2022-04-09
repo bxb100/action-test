@@ -1,4 +1,4 @@
-name: Reusable workflow for input
+name: reusable-workflow-B
 
 on:
   workflow_call:

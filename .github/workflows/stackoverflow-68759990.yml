@@ -1,4 +1,4 @@
-name: PR check example
+name: stackoverflow-68759990
 
 on:
   pull_request:

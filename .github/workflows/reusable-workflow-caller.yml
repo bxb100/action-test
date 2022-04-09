@@ -1,4 +1,4 @@
-name: Call a reusable workflow
+name: reusable-workflow-caller
 
 on: workflow_dispatch
 

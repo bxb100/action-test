@@ -1,4 +1,4 @@
-name: second
+name: stackoverflow-68759990-2
 
 on:
   workflow_run:
