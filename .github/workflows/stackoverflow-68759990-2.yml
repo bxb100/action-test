@@ -13,4 +13,4 @@ jobs:
       steps: 
         - run: |
             echo 'second'
-            echo "::notice title=payload::${{ github.event.workflow_run }}"
+            echo "::notice title=payload::${{ toJSON(github.event.workflow_run) }}"
