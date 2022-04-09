@@ -11,4 +11,6 @@ jobs:
       if: ${{ github.event.workflow_run.conclusion == 'success' }}
       runs-on: ubuntu-latest
       steps: 
-        - run: echo 'second'
+        - run: |
+            echo 'second'
+            echo "::notice title=payload::${{ github.event.workflow_run }}"
