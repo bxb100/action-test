@@ -14,4 +14,4 @@ jobs:
         - run: |
             echo 'second'
             # https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#:~:text=head_branch%2C%20and%20head_sha.-,workflow,-object
-            echo "${{ toJSON(github.event.workflow_run.workflow) }}"
+            echo "${{ toJSON(github.event.workflow) }}"
