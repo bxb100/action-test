@@ -2,7 +2,7 @@ name: stackoverflow-68759990-2
 
 on:
   workflow_run:
-    workflows: ["first"]
+    workflows: ["stackoverflow-68759990-1"]
     types:
       - completed
 

@@ -3,7 +3,7 @@ name: stackoverflow-70666214-2
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["integration"]
+    workflows: ["stackoverflow-70666214-1"]
     branches: ["develop"]
     types:
       - completed

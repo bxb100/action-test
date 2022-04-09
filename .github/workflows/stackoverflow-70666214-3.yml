@@ -2,7 +2,7 @@ name: stackoverflow-70666214-3
 on:
       workflow_dispatch:
       workflow_run:
-        workflows: ["develop-tagging"]
+        workflows: ["stackoverflow-70666214-2"]
         types:
           - completed
     
