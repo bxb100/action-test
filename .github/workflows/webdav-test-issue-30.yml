@@ -1,0 +1,17 @@
+name: webdav-test-issue-30
+
+on: workflow_dispatch
+
+jobs:
+  deplay_to_staging:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to SAAS
+        uses: bxb100/action-upload-webdav@main
+        with:
+          webdav_address: ${{secrets.webdav_a}}
+          webdav_username: ${{secrets.webdav_u}}
+          webdav_password: ${{secrets.webdav_p}}
+          webdav_upload_path: ${{'/ulster-search/profiles/ulster-search/profiles/_default/preview/templates'}}
+          files: "./staging/ulster-search/ftl/*.ftl"
