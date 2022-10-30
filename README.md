@@ -16,6 +16,7 @@ This repo build for testing github action config
 |[stackoverflow-68759990-2.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-2.yml)| ~ | workflow_run test |
 |[emoji-notify.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/emoji-notify.yml)| ~ | test notify emoji style|
 |[webdav-test-issue-30.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/webdav-test-issue-30.yml)| https://github.com/bxb100/action-upload-webdav/issues/30 | test github action blob path |
+|[adding-a-job-summary.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/adding-a-job-summary.yml)|https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary| add job summary[^7] |
 
 
 
@@ -29,3 +30,4 @@ This repo build for testing github action config
 [^4]: https://github.com/bxb100/action-test/blob/main/workflow-panel-show.md that's same with doc show
 [^5]: https://github.com/bxb100/action-test/pull/4
 [^6]: https://github.community/t/ref-head-in-reusable-workflows/203690/30 workflow local reference not working now(20220120)
+[^7]: https://github.com/gradle/gradle-build-action
