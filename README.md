@@ -15,6 +15,7 @@ This repo build for testing github action config
 |[stackoverflow-68759990-1.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-1.yml)| ~ | ~ |
 |[stackoverflow-68759990-2.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/stackoverflow-68759990-2.yml)| ~ | workflow_run test |
 |[emoji-notify.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/emoji-notify.yml)| ~ | test notify emoji style|
+|[webdav-test-issue-30.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/webdav-test-issue-30.yml)| https://github.com/bxb100/action-upload-webdav/issues/30 | test github action blob path |
 
 
 
