@@ -21,7 +21,7 @@ jobs:
               id: run
               uses: ./.github/actions/${{ matrix.actions }}
               with: 
-                secret: ${{ toJson(secrets) }}
+                secrets: ${{ toJson(secrets) }}
           DYNAMIC_USES_EOF
           - name: Run
       - id: run
