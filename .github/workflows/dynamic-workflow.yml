@@ -2,6 +2,7 @@ name: dynamic workflow demo
 on: workflow_dispatch
 jobs:
   dynamic_workflow:
+    name: ${{ matrix.actions }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,7 +22,7 @@ jobs:
               id: run
               uses: ./.github/actions/${{ matrix.actions }}
               with: 
-                secrets: '${{ toJson(secrets) }}'
+                secrets: ${{ toJson(toJson(secrets)) }}
           DYNAMIC_USES_EOF
       - name: Run
         id: run
