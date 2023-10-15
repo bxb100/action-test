@@ -23,6 +23,6 @@ jobs:
               with: 
                 secrets: ${{ toJson(secrets) }}
           DYNAMIC_USES_EOF
-          - name: Run
-      - id: run
+      - name: Run
+        id: run
         uses: ./.tmp-dynamic-uses
