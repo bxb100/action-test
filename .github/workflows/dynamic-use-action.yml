@@ -1,8 +1,8 @@
-name: dynamic workflow demo
+name: dynamic use action workflow demo
 on: workflow_dispatch
 jobs:
-  dynamic_workflow:
-    name: ${{ matrix.actions }}
+  run:
+    name: action-${{ matrix.actions }}-running
     runs-on: ubuntu-latest
     strategy:
       matrix:
