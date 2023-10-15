@@ -17,6 +17,7 @@ This repo build for testing github action config
 |[emoji-notify.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/emoji-notify.yml)| ~ | test notify emoji style|
 |[webdav-test-issue-30.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/webdav-test-issue-30.yml)| https://github.com/bxb100/action-upload-webdav/issues/30 | test github action blob path |
 |[adding-a-job-summary.yml](https://github.com/bxb100/action-test/blob/main/.github/workflows/adding-a-job-summary.yml)|https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary| add job summary[^7] |
+| [Dynamic use](https://github.com/bxb100/action-test/blob/main/.github/workflows/dynamic-workflow.yaml) | <https://github.com/orgs/community/discussions/45342> <br/><https://github.com/apache/incubator-opendal/blob/main/.github/actions/test-core/action.yaml> | dynamic use action |
 
 
 

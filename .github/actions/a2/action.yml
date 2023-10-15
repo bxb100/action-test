@@ -1,0 +1,14 @@
+name: a2
+description: 'Test dynamic workflow and secret visiblity'
+inputs:
+  secrets:
+    description: "The secrets for test"
+    default: "{}"
+
+runs:
+  using: "composite"
+  steps:
+      - name: Setup
+        shell: bash
+        run: |
+          echo "action: a1, secrets: ${{ fromJson(inputs.secrets).greeting }}"

@@ -1,0 +1,28 @@
+name: dynamic workflow demo
+on: workflow_dispatch
+jobs:
+  dynamic_workflow:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        actions: ["a1", "a2"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate dynamic action
+        shell: bash
+        # https://github.com/jenseng/dynamic-uses/blob/v1/action.yml
+        run: |
+          mkdir -p ./.tmp-dynamic-uses &&
+          cat <<'DYNAMIC_USES_EOF' >./.tmp-dynamic-uses/action.yml
+          runs:
+            using: composite
+            steps:
+            - name: Run
+              id: run
+              uses: ./.github/actions/${{ matrix.actions }}
+              with: 
+                secret: ${{ toJson(secrets) }}
+          DYNAMIC_USES_EOF
+          - name: Run
+      - id: run
+        uses: ./.tmp-dynamic-uses
