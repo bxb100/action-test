@@ -10,5 +10,7 @@ runs:
   steps:
       - name: Setup
         shell: bash
+        env:
+          greeting: ${{ fromJson(inputs.secrets).greeting }}
         run: |
-          echo "action: a1, secrets: ${{ fromJson(inputs.secrets).greeting }}"
+          echo "action: a1, secrets: $greeting"
