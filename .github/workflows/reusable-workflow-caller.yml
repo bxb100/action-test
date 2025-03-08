@@ -17,7 +17,7 @@ jobs:
     needs: call-workflow-job2
 
   call-workflow-passing-data:
-    uses: bxb100/action-test/.github/workflows/reusable-workflow-B.yml@main
+    uses: .github/workflows/reusable-workflow-B.yml@main
     with:
       username: mona
     secrets:
